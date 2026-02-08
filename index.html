@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta charset="viewport" content="width=device-width, initial-scale = 1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title> Four Sorting Algorithms</title>
 
 
@@ -13,7 +14,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
         body {
-            font-family: 'Inter', sans-seriff;
+            font-family: 'Inter', sans-serif;
             line-height: 1.5;
             margin: 0;
             padding: 0 16px;
@@ -71,9 +72,9 @@ function insertionSort(arr){
         let key = arr[i];
         let j = i-1;
 
-        while (j &gt; = 0 &amp; &amp; arr[j] &gt; key){
+        while (j &gt;= 0 &amp;&amp; arr[j] &gt; key){
         arr[j + 1] = arr[j];
-        J--;
+        j--;
         }
         arr[j + 1] = key;
         }
